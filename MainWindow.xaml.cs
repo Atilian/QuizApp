@@ -23,7 +23,6 @@ namespace QuizApp
         public MainWindow()
         {
             InitializeComponent();
-            questionApp.Text = "salut";
         }
     }
 }
