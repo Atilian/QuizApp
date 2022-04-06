@@ -23,6 +23,21 @@ namespace QuizApp
         public MainWindow()
         {
             InitializeComponent();
+
+            Random randomId = new Random();
+
+            int Id = randomId.Next(0, 2);
+
+            BDDQuestion getQuestions = new BDDQuestion();
+
+            List<string> list = getQuestions.getBDD(Id);
+
+            questionApp.Text = list[0];
+            answerApp1.Content = "A) "+list[1]+" ?";
+            answerApp2.Content = "B) "+list[2]+" ?";
+            answerApp3.Content = "C) "+list[3]+" ?";
+            answerApp4.Content = "D) "+list[4]+" ?";
+
         }
     }
 }

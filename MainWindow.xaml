@@ -5,7 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuizApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="300">
+        Title="MainWindow" Height="250" Width="600">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5, 2"/>
+        </Style>
+    </Window.Resources>
     <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="40*" />
@@ -20,14 +25,18 @@
             VerticalAlignment="Center"
             FontSize="20"
             FontWeight="Black"
-            Foreground="Green">
+            Foreground="Green"
+            TextWrapping="Wrap"
+            TextAlignment="Center">
             Question !
         </TextBlock>
         <Button
             Name="answerApp1"
-            Grid.Row="1"
             FontWeight="Black"
             FontSize="15"
+            Grid.Row="1"
+            Width="200" 
+            HorizontalContentAlignment="Left"
             Background="White"
             BorderBrush="White">
             A )  Test
@@ -37,6 +46,8 @@
             Grid.Row="2"
             FontWeight="Black"
             FontSize="15"
+            Width="200"
+            HorizontalContentAlignment="Left"
             Background="White"
             BorderBrush="White">
             A )  Test
@@ -46,6 +57,8 @@
             Grid.Row="3"
             FontWeight="Black"
             FontSize="15"
+            Width="200"
+            HorizontalContentAlignment="Left"
             Background="White"
             BorderBrush="White">
             A )  Test
@@ -55,6 +68,8 @@
             Grid.Row="4"
             FontWeight="Black"
             FontSize="15"
+            Width="200"
+            HorizontalContentAlignment="Left"
             Background="White"
             BorderBrush="White">
             A )  Test
