@@ -58,6 +58,7 @@ namespace QuizApp
                 list.Add(reader.GetString("Answer2").ToString());
                 list.Add(reader.GetString("Answer3").ToString());
                 list.Add(reader.GetString("Answer4").ToString());
+                list.Add(reader.GetString("IAnswer").ToString());
             }
 
             Console.WriteLine(list[0]);

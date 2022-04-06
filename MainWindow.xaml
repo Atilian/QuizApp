@@ -13,7 +13,7 @@
     </Window.Resources>
     <Grid Margin="15">
         <Grid.RowDefinitions>
-            <RowDefinition Height="40*" />
+            <RowDefinition Height="30*" />
             <RowDefinition Height="20*" />
             <RowDefinition Height="20*" />
             <RowDefinition Height="20*" />
@@ -31,6 +31,7 @@
             Question !
         </TextBlock>
         <Button
+            Click="answer1"
             Name="answerApp1"
             FontWeight="Black"
             FontSize="15"
@@ -42,6 +43,7 @@
             A )  Test
         </Button>
         <Button
+            Click="answer2"
             Name="answerApp2"
             Grid.Row="2"
             FontWeight="Black"
@@ -53,6 +55,7 @@
             A )  Test
         </Button>
         <Button 
+            Click="answer3"
             Name="answerApp3"
             Grid.Row="3"
             FontWeight="Black"
@@ -64,6 +67,7 @@
             A )  Test
         </Button>
         <Button 
+            Click="answer4"
             Name="answerApp4"
             Grid.Row="4"
             FontWeight="Black"
@@ -74,5 +78,12 @@
             BorderBrush="White">
             A )  Test
         </Button>
+        <TextBlock
+            Name="scoreView"
+            TextAlignment="Right"
+            Padding="8"
+            FontWeight="Black">
+            0
+        </TextBlock>
     </Grid>
 </Window>
